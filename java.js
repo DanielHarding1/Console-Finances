@@ -102,12 +102,39 @@ for (var i = 0; i < finances.length; i++) {
   total = total + finances[i][1];
 }
 
-console.log("Total:" + "£" + total);
+console.log("Total:" + " £" + total);
 
 //Average Change Between Years
-var averagechange = total / finances.length;
+var averagechange = total / finances.length - 1;
 var average = averagechange.toFixed(2);
 console.log("Average Change: " + "£" + average);
+
+//Finding the highest increase in profits
+for (var i = 0; i < finances.length; i++) {
+  greatestmonth = finances[i][0];
+}
+
+for (var i = 1; i < finances.length; i++) {
+  var highestnum = finances[i][1];
+  //console.log(highestnum);
+  var highest = finances[i - 1][1];
+  //console.log(highest);
+  var highestoveral = highestnum - highest;
+}
+
+for (var i = 0; i < finances.length; i++) {
+  //console.log(highestoveral);
+}
+
+console.log("Greatest Increase in Profit: £" + highestoveral);
+
+console.log(
+  "This project is incomplete, i will work on it during the week and resubmit"
+);
+
+//Finding Biggest Lose
+
+var min = 0;
 
 // ## Instructions
 
