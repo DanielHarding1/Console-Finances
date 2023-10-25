@@ -122,19 +122,21 @@ for (var i = 1; i < finances.length; i++) {
   var highestoveral = highestnum - highest;
 }
 
-for (var i = 0; i < finances.length; i++) {
-  //console.log(highestoveral);
+var maxnumber = 0;
+
+for (var i = 0; i < highestoveral.length; i++) {
+  if (highestoveral[i] > maxnumber) {
+    maxnumber = highestoveral[i];
+  }
 }
 
-console.log("Greatest Increase in Profit: £" + highestoveral);
-
+console.log("Greatest Increase in Profit/Losses: £" + highestoveral);
+console.log(highestoveral);
 console.log(
   "This project is incomplete, i will work on it during the week and resubmit"
 );
 
 //Finding Biggest Lose
-
-var min = 0;
 
 // ## Instructions
 
